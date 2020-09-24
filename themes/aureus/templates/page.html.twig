@@ -1,0 +1,50 @@
+<section class="menue">
+  <div class="container">
+    <div class="menue-container" id="sticky">
+      <div class="menue-logo cp">
+        {{ page.site_branding }}
+      </div>
+      <div class="menue-list">
+        {{ page.navigation }}
+      </div>
+      <div class="menue-cta">
+        <div class="menue-cta-call cp">
+          <img alt="Telefon" src="images/menue/phone.png" />
+          <span>Rufen Sie uns: +49 30 887 100 95</span>
+        </div>
+        <div class="menue-cta-login cp" id="login-button">Login</div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ page.content }}
+<section class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-left">
+        {{ page.footer_left }}
+      </div>
+      <div class="footer-middle">
+        {{ page.footer_middle }}
+      </div>
+      <div class="footer-right">
+        {{ page.footer_right }}
+      </div>
+    </div>
+  </div>
+  <section class="login" id="login">
+    <div class="login-container">
+      <div class="login-content">
+        <h2 class="login-content-headline">Login</h2>
+        <form>
+          <input id="name" placeholder="E-Mail" type="text" />
+          <input id="name" placeholder="Passwort" type="password" /><button>
+            Anmelden
+          </button>
+        </form>
+        <p class="login-forgot">Passwort vergessen?</p>
+        <div class="login-close" id="login-close">&nbsp;</div>
+      </div>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,22 @@
+type: theme
+base theme: false
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+name: 'aureus'
+description: 'Built to use aureus, a sleek, intuitive, and powerful front-end framework for faster and easier web development.'
+package: 'aureus'
+
+regions:
+  site_branding: 'Site logo'
+  navigation: 'Main menu'
+  navigation_right: 'Navigation right'
+  content: 'Content'
+  footer_left: 'Footer left'
+  footer_middle: 'Footer middle'
+  footer_right: 'Footer right'
+  hidden: 'Hidden'
+
+libraries:
+  - 'aureus/framework'
+
