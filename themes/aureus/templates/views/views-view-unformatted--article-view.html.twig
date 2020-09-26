@@ -1,0 +1,12 @@
+{% for key,row in rows %}
+<div class="blog-article-item-picture">
+  <img alt="Tresor" src="{{file_url(row.content['#row']._entity.field_image.entity.uri.value)}}" />
+</div>
+<div class="blog-article-item-content">
+  <p class="blog-article-item-content-time">02-06-2020</p>
+  <p class="blog-article-item-content-title">
+    {{row.content['#row']._entity.body[0].value}}
+  </p>
+  <p class="blog-article-item-content-link">Mehr</p>
+</div>
+{% endfor %}

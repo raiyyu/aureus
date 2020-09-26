@@ -1,0 +1,13 @@
+<?php 
+
+function aureus_preprocess_page(&$variables) {
+	$logged_in = \Drupal::currentUser()->isAuthenticated();
+	if( $logged_in ){
+		$variables['logged_in'] = 'YES';	
+	} else {
+		$variables['logged_in'] = 'NO';	
+	}
+	  
+}
+
+

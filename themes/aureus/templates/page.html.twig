@@ -8,11 +8,12 @@
         {{ page.navigation }}
       </div>
       <div class="menue-cta">
-        <div class="menue-cta-call cp">
-          <img alt="Telefon" src="images/menue/phone.png" />
-          <span>Rufen Sie uns: +49 30 887 100 95</span>
-        </div>
-        <div class="menue-cta-login cp" id="login-button">Login</div>
+        {{ page.navigation_right }}          
+        {% if logged_in == 'YES' %} 
+          <a href="/aureus/user/logout" class="menue-cta-login cp" id="logout-button" style="display:inline-block;">logout</a>
+        {%else%}   
+          <div class="menue-cta-login cp" id="login-button" style="display:inline-block;">Login</div>
+        {% endif%}
       </div>
     </div>
   </div>
@@ -36,12 +37,7 @@
     <div class="login-container">
       <div class="login-content">
         <h2 class="login-content-headline">Login</h2>
-        <form>
-          <input id="name" placeholder="E-Mail" type="text" />
-          <input id="name" placeholder="Passwort" type="password" /><button>
-            Anmelden
-          </button>
-        </form>
+        {{ page.login_block }}
         <p class="login-forgot">Passwort vergessen?</p>
         <div class="login-close" id="login-close">&nbsp;</div>
       </div>

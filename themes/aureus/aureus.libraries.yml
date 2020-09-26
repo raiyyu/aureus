@@ -6,6 +6,7 @@ framework:
       css/slick.css: {}
       css/onecol.css: {}  
       css/style.css: {}
+      css/main.css: {}
   js:
     js/jquery.min.js: {}
     js/main.js: {}

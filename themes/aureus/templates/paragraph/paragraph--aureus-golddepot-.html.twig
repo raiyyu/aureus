@@ -1,0 +1,21 @@
+<section class="about">
+    <h2>{{ content.field_golddepot_title }}</h2>
+    <div class="about-container" style="background-image:url('{{ file_url(content.field_advantage_golddepot_backgr['#items'].entity.uri.value) }}');">
+        <div class="about-background">&nbsp;</div>
+        <div class="container about-wrapper">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>
+                       {{ content.field_golddepot_subtitle }}
+                    </h3>
+                    <p class="about-content-subhead">
+                       {{ content.field_golddepot_text }}
+                    </p>
+                </div>
+                <div class="about-picture">
+                    <img alt="Mann" src="{{ file_url(content.field_golddepot_image['#items'].entity.uri.value) }}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
